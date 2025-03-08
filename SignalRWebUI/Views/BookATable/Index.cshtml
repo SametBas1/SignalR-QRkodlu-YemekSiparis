@@ -1,0 +1,139 @@
+﻿@model CreateBookingDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+@await Component.InvokeAsync("_UILayoutHeadComponentPartial")
+
+<body class="sub_page">
+
+    @await Component.InvokeAsync("_MenuNavbarComponentPartial")
+
+    <section class="book_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Rezervasyon Oluşturun
+                </h2>
+                <p>İhtiyacınıza uygun bir rezervasyon oluşturun!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form_container">
+                        <form id="createBookingForm" method="post">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Adınız Soyadınız" asp-for="BookingName" />
+                                <span asp-validation-for="BookingName" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Telefon Numaranız" asp-for="Phone" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <input type="email" class="form-control" placeholder="Mail Adresiniz" asp-for="Mail" />
+                                <span asp-validation-for="Mail" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <select asp-for="PersonCount" class="form-control nice-select wide">
+                                    <option value="" disabled selected>
+                                        Kaç Kişisiziniz?
+                                    </option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6++</option>
+                                </select>
+                                <span asp-validation-for="PersonCount" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <input type="date" class="form-control" asp-for="Date">
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                            <div class="btn_box">
+                                <button type="submit" id="btnchecked">
+                                    Yerinizi Ayırtın
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="map_container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.1032754085688!2d29.27282427851611!3d40.87568811900211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadc8202b9169f%3A0x7a63c71b1940b4b9!2sKarde%C5%9Fler%20Avm!5e0!3m2!1str!2str!4v1741133902449!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @await Component.InvokeAsync("_UILayoutFooterComponentPartial")
+
+    @await Component.InvokeAsync("_UILayoutScriptComponentPartial")
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Formu AJAX ile gönderme
+            $('#createBookingForm').submit(function(event) {
+                event.preventDefault(); // Formun normal şekilde submit edilmesini engeller
+
+                var formData = $(this).serialize(); 
+                $.ajax({
+                    url: '@Url.Action("CreateBooking", "Booking")',  // Controller'daki CreateBooking action'ına istek gönderiyoruz
+                    type: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        // Başarılı olduğunda SweetAlert2 ile mesaj göster
+                        Swal.fire({
+                            title: 'Rezervasyonunuz Başarıyla Oluşturuldu!',
+                            text: 'İşleminiz başarıyla tamamlandı.',
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        }).then(function() {
+                            window.location.href = '@Url.Action("Index", "Default")'; // Başarıyla işlemi tamamladıktan sonra Index sayfasına yönlendir
+                        });
+                    },
+                    error: function() {
+                        // Hata durumunda SweetAlert2 ile mesaj göster
+                        Swal.fire({
+                            title: 'Bir hata meydana geldi!',
+                            text: 'Lütfen tekrar deneyin.',
+                            icon: 'error',
+                            confirmButtonText: 'Tamam'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="path/to/jquery.nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
+
+<style>
+    #btnchecked {
+        background-color: #ffcc00;
+        color: black;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        width: 100%; /* Mobilde butonun tam genişlikte olmasını sağlıyor */
+    }
+
+        #btnchecked:hover {
+            background-color: #ffaa00;
+            transform: scale(1.05);
+        }
+</style>
+

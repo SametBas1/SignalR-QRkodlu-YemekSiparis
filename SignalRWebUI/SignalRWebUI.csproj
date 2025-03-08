@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\bootstrap.min.css" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\demo.css" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\ready.css" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\ready.css.map" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\ready.min.css" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.eot" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.svg" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.ttf" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.woff" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.woff2" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\img\menu.png" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\img\menu2.png" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\img\profile.jpg" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\img\profile2.jpg" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\jquery.3.2.1.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\popper.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\demo.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-notify\bootstrap-notify.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\bootstrap-toggle\bootstrap-toggle.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\chart-circle\circles.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\chartist\chartist.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\chartist\plugin\chartist-plugin-tooltip.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\jquery.mapael.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\france_departments.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\france_departments.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\README.txt" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\usa_states.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\usa_states.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries_mercator.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries_mercator.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries_miller.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-mapael\maps\world_countries_miller.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-scrollbar\jquery.scrollbar.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\plugin\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\ready.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\ready.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_alerts.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_badges.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_buttons.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_cards.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_charts.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_dropdowns.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_inputs.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_maps.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_modals.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_navbars.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_navpills.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_navsearch.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_paginations.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_sliders.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\components\_tables.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\plugins\_chartist.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\plugins\_jqueryscrollbar.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\plugins\_jqueryui.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\plugins\_toggle.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_background.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_components.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_layouts.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_line-awesome.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_outlinefocus.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_plugins.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_responsive.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_typography.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\sass\ready\_variables.scss" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\components.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\forms.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\icons.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\index.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\LICENSE" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\notifications.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\README.md" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\tables.html" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\typography.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
+    <PackageReference Include="MimeKit" Version="4.10.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SignalR.DataAccessLayer\SignalR.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\SignalR.DtoLayer\SignalR.DtoLayer.csproj" />
+    <ProjectReference Include="..\SignalR.EntityLayer\SignalR.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="QRCoder">
+      <HintPath>..\..\..\..\QRCoder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
