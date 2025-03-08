@@ -1,0 +1,45 @@
+﻿@model CreateMessageDto
+
+<section class="book_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Bize Ulaşın
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form method="post" asp-action="SendMessage" asp-controller="Default">
+                        <div>
+                            <input type="text" class="form-control" placeholder="Adınız Soyadınız" asp-for="NameSurname" />
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Telefon Numaranız" asp-for="Phone" />
+                        </div>
+                        <div>
+                            <input type="email" class="form-control" placeholder="Email Adresiniz" asp-for="Mail" />
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Konu" asp-for="Subject" />
+                        </div>
+                        <div>
+                            <textarea asp-for="MessageContent" rows="10" placeholder="Buraya mesajınızı yazabilirsiniz..." class="form-control"></textarea>
+                        </div>
+
+                        <div class="btn_box">
+                            <button>
+                                Mesajı Gönder
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                <div class="col-md-6">
+                    <div class="map_container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.1032754085688!2d29.27282427851611!3d40.87568811900211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadc8202b9169f%3A0x7a63c71b1940b4b9!2sKarde%C5%9Fler%20Avm!5e0!3m2!1str!2str!4v1741133902449!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

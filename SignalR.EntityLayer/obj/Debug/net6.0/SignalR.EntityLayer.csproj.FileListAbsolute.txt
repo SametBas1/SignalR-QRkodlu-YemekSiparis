@@ -1,0 +1,12 @@
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.deps.json
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.dll
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\bin\Debug\net6.0\SignalR.EntityLayer.pdb
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.AssemblyInfo.cs
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.dll
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\refint\SignalR.EntityLayer.dll
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.pdb
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\ref\SignalR.EntityLayer.dll
+C:\Users\samet\Desktop\YemekSiparis\repos\SignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.csproj.AssemblyReference.cache
