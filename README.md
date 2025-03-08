@@ -22,14 +22,11 @@ SignalRProject
 ├── SignalRProject.WebUI        
 ```
 ## 🖼️ Proje Görselleri
-![resim](readmeImage/11.png)
-![resim](readmeImage/1.png)
-![resim](readmeImage/2.png)
-![resim](readmeImage/3.png)
-![resim](readmeImage/4.png)
-![resim](readmeImage/5.png)
-![resim](readmeImage/6.png)
-![resim](readmeImage/7.png)
-![resim](readmeImage/8.png)
-![resim](readmeImage/9.png)
-![resim](readmeImage/Api.png)
+![resim](foto/ss1.png)
+![resim](foto/ss2.png)
+![resim](foto/ss3.png)
+![resim](foto/ss4.png)
+![resim](foto/ilk.png)
+![resim](foto/ilk2.png)
+![resim](foto/ilk4.png)
+
