@@ -1,18 +1,1 @@
-﻿# 1️⃣ Node.js image'ını kullanarak frontend build aşaması
-FROM node:18 AS build
-WORKDIR /app
 
-# 2️⃣ Frontend dosyalarını kopyala ve bağımlılıkları yükle
-COPY SignalRProject.WebUI/package.json SignalRProject.WebUI/package-lock.json ./
-RUN npm install
-
-# 3️⃣ Uygulamayı build et
-COPY SignalRProject.WebUI ./
-RUN npm run build
-
-# 4️⃣ Hafif bir Nginx image'ı ile web sunucu oluştur
-FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
-
-# 5️⃣ Web sunucusunu çalıştır
-CMD ["nginx", "-g", "daemon off;"]
