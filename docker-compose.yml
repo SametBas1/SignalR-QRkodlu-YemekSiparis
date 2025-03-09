@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  # Web UI Service
+  webui:
+    build:
+      context: .  # Projenizin kök dizini
+      dockerfile: SignalRProject.WebUI/Dockerfile  # Web UI için Dockerfile
+    ports:
+      - "8080:80"  # Web UI'yý 8080 portunda çalýþtýr
